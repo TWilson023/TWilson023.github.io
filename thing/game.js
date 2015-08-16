@@ -21,6 +21,7 @@ window.onload = function() {
 	function draw() {
 		ctx.fillStyle = "#000";
 		ctx.fillRect(0, 0, canvas.width, canvas.height);
+		ctx.translate(canvas.width / 2, canvas.height / 2);
 		player.draw(ctx);
 	}
 
