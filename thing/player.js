@@ -16,10 +16,10 @@ var Player = function() {
 		ctx.fillStyle = "#FFF";
 		ctx.strokeStyle = "#FFF";
 
-		context.beginPath();
-		context.arc(x - radius / 2, y - radius / 2, radius, 0, 2 * Math.PI, false);
-		context.fill();
-		context.closePath();
+		ctx.beginPath();
+		ctx.arc(x - radius / 2, y - radius / 2, radius, 0, 2 * Math.PI, false);
+		ctx.fill();
+		ctx.closePath();
 
 		ctx.beginPath();
 		ctx.moveTo(0, 0);
