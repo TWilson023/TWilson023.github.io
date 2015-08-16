@@ -1,7 +1,7 @@
 var Player = function() {
 
-	var radius = 25;
-	var r = 200;
+	var radius = 15;
+	var r = 150;
 	var angle = 0;
 
 	this.update = function() {
@@ -17,7 +17,7 @@ var Player = function() {
 		ctx.strokeStyle = "#FFF";
 
 		ctx.beginPath();
-		ctx.arc(x - radius / 2, y - radius / 2, radius, 0, 2 * Math.PI, false);
+		ctx.arc(x, y, radius, 0, 2 * Math.PI, false);
 		ctx.fill();
 		ctx.closePath();
 
