@@ -6,7 +6,7 @@ var Player = function() {
 
 	this.update = function() {
 		angle++;
-		angle /= 360;
+		angle %= 360;
 	};
 
 	this.draw = function(ctx) {
