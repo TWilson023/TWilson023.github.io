@@ -14,7 +14,18 @@ var Player = function() {
 		var y = Math.sin(angle * (Math.PI / 180)) * r;
 
 		ctx.fillStyle = "#FFF";
-		ctx.fillRect(x - radius / 2, y - radius / 2, radius, radius);
+		ctx.strokeStyle = "#FFF";
+
+		context.beginPath();
+		context.arc(x - radius / 2, y - radius / 2, radius, 0, 2 * Math.PI, false);
+		context.fill();
+		context.closePath();
+
+		ctx.beginPath();
+		ctx.moveTo(0, 0);
+		ctx.lineTo(x, y);
+		ctx.stroke();
+		ctx.closePath();
 	};
 
 };
