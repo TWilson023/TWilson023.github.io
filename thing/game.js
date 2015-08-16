@@ -10,7 +10,7 @@ window.onload = function() {
 		player = new Player();
 		window.setInterval(function() {
 			update();
-			render();
+			draw();
 		}, 1000 / 30);
 	}
 
@@ -18,10 +18,10 @@ window.onload = function() {
 		player.update();
 	}
 
-	function render() {
+	function draw() {
 		ctx.fillStyle = "#000";
 		ctx.fillRect(0, 0, canvas.width, canvas.height);
-		player.render(ctx);
+		player.draw(ctx);
 	}
 
 	init();
